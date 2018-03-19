@@ -39,6 +39,9 @@
   .detail-info {
     width: 50%;
   }
+  .aside > .c-row {
+    display: none;
+  }
 }
 //----------------------------------------------
 @media (max-width: 1022px) {
@@ -111,6 +114,23 @@
   }
 }
 //---------------------------------------
+@media (max-width: 766px) {
+  .content-contact {
+    margin-top: 15px;
+  }
+  .content-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+//---------------------------------------
 @media (max-width: 480px) {
   .aside {
     width: 262px;
@@ -121,7 +141,6 @@
   .content-contact {
     width: 100%;
     text-align: center;
-    margin-top: 15px;
   }
   .logo {
     padding-left: 0;
